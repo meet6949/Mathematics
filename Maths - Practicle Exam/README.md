@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&section=header&text=Stats%20%26%20Linear%20Algebra&fontSize=55&fontColor=fff&animation=twinkling&fontAlignY=35&desc=A%20Statistics%20%26%20Linear%20Algebra%20Practical%20Exam%20on%20Real%20Student%20Score%20Data&descAlignY=55&descSize=17" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Student%20Scores&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=A%20Statistics%20Linearg%20Algebra%20on%20Student%20Score&descAlignY=55&descSize=18" width="100%"/>
 
 <br/>
 

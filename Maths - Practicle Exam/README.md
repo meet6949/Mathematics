@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Derivable%20Judgement&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=A%20Statistical%20Decision-Making%20Model%20on%20Public%20Health%20Data&descAlignY=55&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Student%20Scores&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=A%20Statistical%20Decision-Making%20Model%20on%20Public%20Health%20Data&descAlignY=55&descSize=18" width="100%"/>
 
 <br/>
 

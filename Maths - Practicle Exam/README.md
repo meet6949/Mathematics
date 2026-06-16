@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Derivable%20Judgement&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=A%20Statistical%20Decision-Making%20Model%20on%20Public%20Health%20Data&descAlignY=55&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&section=header&text=Stats%20%26%20Linear%20Algebra&fontSize=55&fontColor=fff&animation=twinkling&fontAlignY=35&desc=A%20Statistics%20%26%20Linear%20Algebra%20Practical%20Exam%20on%20Student%20Score%20Data&descAlignY=55&descSize=17" width="100%"/>
 
 <br/>
 
@@ -8,9 +8,10 @@
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org)
 [![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org)
 [![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)](https://scipy.org)
-[![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org)
+[![Seaborn](https://img.shields.io/badge/Seaborn-4CB391?style=for-the-badge)](https://seaborn.pydata.org)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge)](https://matplotlib.org)
 [![Status](https://img.shields.io/badge/Status-Complete-22c55e?style=for-the-badge)]()
-
 <br/>
 
 > *✨ "Data is the new oil — but only if you know how to refine it." ✨*

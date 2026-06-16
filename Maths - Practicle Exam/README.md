@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&section=header&text=Spread%20Locator&fontSize=55&fontColor=fff&animation=twinkling&fontAlignY=35&desc=A%20Statistical%20Distribution%20Analysis%20Model%20on%20E-Commerce%20Transactions&descAlignY=55&descSize=17" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Student%20Scores&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=A%20Statistics%20Linearg%20Algebra%20on%20Student%20Score&descAlignY=55&descSize=18" width="100%"/>
 
 <br/>
 
@@ -10,19 +10,17 @@
 [![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)](https://scipy.org)
 [![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org)
 [![Seaborn](https://img.shields.io/badge/Seaborn-4CB391?style=for-the-badge)](https://seaborn.pydata.org)
-[![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge)](https://matplotlib.org)
 [![Status](https://img.shields.io/badge/Status-Complete-22c55e?style=for-the-badge)]()
+<br/>
+
+> *✨ "Data is the new oil — but only if you know how to refine it." ✨*
 
 <br/>
 
-> *✨ "In God we trust. All others must bring data." — W. Edwards Deming ✨*
+**⏱️ Duration:** 6 Hours &nbsp;&nbsp;**|**&nbsp;&nbsp; **🧪 Type:** Theory + Practical &nbsp;&nbsp;**|**&nbsp;&nbsp; **🏥 Domain:** Public Health Analytics
 
-<br/>
-
-**⏱️ Duration:** 6 Hours &nbsp;&nbsp;**|**&nbsp;&nbsp; **🧪 Type:** Theory + Practical &nbsp;&nbsp;**|**&nbsp;&nbsp; **🛒 Domain:** E-Commerce Analytics
-
-**👨‍💻 Author:** [Meet Gajera](https://github.com/meet6949)
-
+**👨‍💻 Author:** Meet Gajera
 <br/>
 
 </div>
@@ -53,35 +51,35 @@
 <tr>
 <td>
 
-You are a **data analyst at an e-commerce platform**. Armed with 220 real transaction records from January 2023, your mission is to use the power of **statistical distributions** to understand customer purchase behaviour — and *locate the spread* behind every rupee transacted.
+You are a **data analyst examining real student exam records**. Armed with score data across Math, Science, and English subjects, your mission is to use the power of **statistics and linear algebra** to understand student performance — and *uncover the patterns* behind every mark scored.
 
 **The data covers:**
-- 🆔 Transaction & Customer IDs
-- 💰 Transaction amounts (₹)
-- 📅 Transaction dates (Jan 2023)
-- 🗺️ Region — North, South, East, West
-- ✅ Transaction status — Success / Fail
-- 🔢 Weekly transaction count per customer
+- 📐 Math, Science & English exam scores
+- ⏱️ Hours studied per student
+- ✅ Pass / Fail classification
 
-**The goal:** Fit the right distributions, test them, and derive *probability-based business decisions*.
+**The goal:** Compute measures of central tendency, fit distributions, apply probability, and use vector algebra to draw *data-driven insights* about student performance.
 
 </td>
 <td>
 
 ```
-📦 220 Transaction Records
+📦 Student Score Records
          │
          ▼
-🔍 Exploratory Analysis
+📊 Central Tendency & Dispersion
          │
          ▼
-📐 Distribution Fitting
+🎲 Probability Analysis
          │
          ▼
-📈 Statistical Inference
+📈 Distribution & Visualization
          │
          ▼
-✅ Business Insights
+🔢 Linear Algebra (Vectors)
+         │
+         ▼
+✅ Key Insights
 ```
 
 </td>
@@ -92,50 +90,124 @@ You are a **data analyst at an e-commerce platform**. Armed with 220 real transa
 
 ## 🗄️ Dataset Structure
 
-> **File:** `spread_locator_dataset.csv` &nbsp;|&nbsp; **Records:** `220` &nbsp;|&nbsp; **Features:** `7`
+> **File:** `students_scores.csv` &nbsp;|&nbsp; **Features:** `5`
 
 | # | Field Name | Data Type | Description |
 |---|------------|-----------|-------------|
-| 1 | `transaction_id` | UUID/String | 🔑 Unique identifier for each transaction |
-| 2 | `customer_id` | UUID/String | 👤 Unique identifier for each customer |
-| 3 | `transaction_amount` | Float | 💰 Total transaction amount in ₹ |
-| 4 | `transaction_date` | Date | 📅 Date of the transaction (Jan 2023) |
-| 5 | `transaction_count` | Int | 🔢 Number of transactions by customer in that week |
-| 6 | `region` | String | 🗺️ `"North"` · `"South"` · `"East"` · `"West"` |
-| 7 | `transaction_status` | String | ✅ `"Success"` · `"Fail"` |
+| 1 | `Math_Score` | Float | 📐 Student's mathematics exam score |
+| 2 | `Science_Score` | Float | 🔬 Student's science exam score |
+| 3 | `English_Score` | Float | 📖 Student's English exam score |
+| 4 | `Hours_Studied` | Float | ⏱️ Total hours the student studied |
+| 5 | `Pass_Fail` | Int | ✅ `1` = Pass · `0` = Fail |
 
 ---
 
 ## 📚 Theoretical Foundation (Part A)
 
-> 💡 **11 Core Concepts** — detailed notes with formulas, properties, and project-specific applications.
+> 💡 **4 Core Concepts** — detailed notes with formulas, properties, and project-specific applications.
 
 <details>
-<summary><b>1️⃣ Statistical Distributions</b> — The backbone of all analysis</summary>
+<summary><b>1️⃣ Measures of Central Tendency</b> — The backbone of all analysis</summary>
 
 <br/>
 
-**Definition:** A statistical distribution describes all possible values a random variable can take and how likely each value (or range) is to occur.
+**Definition:** Central tendency describes where the "center" of a dataset lies — the most representative value.
 
 ```
-Raw Data ──→ Pattern of Values ──→ Statistical Distribution
+Mean   = Σx / n
+Median = Middle value when data is sorted
+Mode   = Most frequently occurring value
 ```
 
 **Key Parameters:**
-| Parameter | Meaning |
-|---|---|
-| Mean (μ) | Central tendency / expected value |
-| Variance (σ²) | Spread around the mean |
-| Skewness | Asymmetry (right-skewed = long right tail) |
-| Kurtosis | Tail heaviness |
+| Measure | Best Used When | Sensitive to Outliers? |
+|---|---|---|
+| Mean (μ) | Symmetric data, no outliers | Yes |
+| Median | Skewed data or outliers present | No |
+| Mode | Categorical or discrete data | No |
 
-> 📌 *In this project:* Knowing the distribution of `transaction_amount` lets us answer: *"What % of orders exceed ₹5000?"*
+> 📌 *In this project:* Applied to `Math_Score` to understand where most students cluster in performance.
 
 <br/>
 </details>
 
 <details>
-<summary><b>2️⃣ Q-Q Plot</b> — Normality testing without histograms</summary>
+<summary><b>2️⃣ Measures of Dispersion</b> — Spread around the center</summary>
+
+<br/>
+
+**Definition:** Dispersion measures how spread out the data values are from the central value.
+
+```
+Range     = Max − Min
+Variance  = Σ(xᵢ − μ)² / n
+Std Dev   = √Variance
+```
+
+**How to interpret:**
+- **Low std dev** → values are clustered near the mean
+- **High std dev** → values are spread far from the mean
+- **Range** gives total span but is sensitive to extreme values
+
+> 📌 *In this project:* Applied to `Science_Score` to measure consistency of student performance across the class.
+
+<br/>
+</details>
+
+<details>
+<summary><b>3️⃣ Probability & Conditional Probability</b> — Likelihood of outcomes</summary>
+
+<br/>
+
+Models the likelihood of events from Pass/Fail data.
+
+```
+P(A)      = Favourable outcomes / Total outcomes
+
+P(A | B)  = P(A ∩ B) / P(B)        ← Conditional Probability
+
+Contingency Table:
+         Hours > 5   Hours ≤ 5
+Pass  |     a      |     b     |
+Fail  |     c      |     d     |
+```
+
+> 📌 *In this project:* Computed **P(Pass)** overall and **P(Pass | Hours_Studied > 5)** using a contingency table — revealing the impact of study time on outcomes.
+
+> 💡 If P(Pass | Hours > 5) >> P(Pass), then study hours and passing are **dependent events**.
+
+<br/>
+</details>
+
+<details>
+<summary><b>4️⃣ Normal Distribution & Visualization</b> — The bell curve</summary>
+
+<br/>
+
+A symmetric, bell-shaped distribution defined by mean μ and std dev σ.
+
+```
+PDF: f(x) = [1/(σ√2π)] × exp[−(x − μ)² / (2σ²)]
+
+Empirical Rule:
+  P(μ − σ  < X < μ + σ)  ≈ 68.3%
+  P(μ − 2σ < X < μ + 2σ) ≈ 95.4%
+  P(μ − 3σ < X < μ + 3σ) ≈ 99.7%
+```
+
+**Skewness & Kurtosis:**
+| Metric | Formula | Interpretation |
+|---|---|---|
+| Skewness | Σ((xᵢ−μ)/σ)³ / n | 0 = symmetric; + = right tail; − = left tail |
+| Kurtosis | Σ((xᵢ−μ)/σ)⁴ / n − 3 | 0 = normal; + = heavy tails; − = light tails |
+
+> 📌 *In this project:* Histogram + Normal Curve for `Math_Score`; Skewness & Kurtosis for `Science_Score`; Q-Q Plot for `English_Score`.
+
+<br/>
+</details>
+
+<details>
+<summary><b>5️⃣ Q-Q Plot</b> — Normality testing without histograms</summary>
 
 <br/>
 
@@ -146,206 +218,36 @@ Raw Data ──→ Pattern of Values ──→ Statistical Distribution
 - **Curved/bent tails** → skewness or heavy tails
 - **S-shaped curve** → kurtosis mismatch
 
-> 📌 *In this project:* Raw amounts bend upward at the right tail. After log transformation, the Q-Q plot is nearly linear → **Log-Normal confirmed**.
+> 📌 *In this project:* Q-Q Plot of `English_Score` against a theoretical normal distribution checks whether scores are normally distributed.
 
 <br/>
 </details>
 
 <details>
-<summary><b>3️⃣ Discrete vs Continuous Distributions</b></summary>
+<summary><b>6️⃣ Linear Algebra — Vectors, Dot Product & Norms</b> — Geometry of scores</summary>
 
 <br/>
 
-| Feature | Discrete | Continuous |
-|---|---|---|
-| Values | Countable (0, 1, 2, ...) | Uncountable (any real number) |
-| Probability Tool | PMF | PDF |
-| P(X = exact k) | Defined (can be > 0) | Always = 0 |
-| Example | Daily order count | Order amount (₹) |
-| Distributions | Bernoulli, Binomial, Poisson | Normal, Log-Normal, Gamma |
-
-> 📌 *In this project:* `transaction_count` → Discrete &nbsp;|&nbsp; `transaction_amount` → Continuous &nbsp;|&nbsp; `transaction_status` → Binary/Discrete
-
-<br/>
-</details>
-
-<details>
-<summary><b>4️⃣ Bernoulli Distribution</b> — The simplest building block</summary>
-
-<br/>
-
-Models a single trial with two outcomes — Success (1) or Failure (0).
+Represent student scores as vectors in n-dimensional space.
 
 ```
-P(X = 1) = p          (success)
-P(X = 0) = 1 − p      (failure)
+Vector A = [Math scores of first 5 students]
+Vector B = [Science scores of first 5 students]
 
-Mean     = p
-Variance = p(1 − p)
-```
+Dot Product:   A · B = Σ(aᵢ × bᵢ)
 
-> 📌 *In this project:* Each transaction is a Bernoulli trial. **p ≈ 0.427** (42.7% of transactions succeed).
+Norm 1 (L1):  ||A||₁ = Σ|aᵢ|
+Norm 2 (L2):  ||A||₂ = √(Σaᵢ²)    ← Euclidean length
 
-<br/>
-</details>
-
-<details>
-<summary><b>5️⃣ Binomial Distribution</b> — n Bernoulli trials summed</summary>
-
-<br/>
-
-Models the number of successes in **n** independent Bernoulli trials.
-
-```
-P(X = k) = C(n,k) × p^k × (1−p)^(n−k)
-
-Mean     = np
-Variance = np(1−p)
-```
-
-> 📌 *In this project:* Weekly transaction count fits Binomial — each of a customer's weekly transactions has probability **p** of success.
-
-> 💡 When n → ∞ and p → 0 such that np = λ, Binomial → Poisson (Poisson Limit Theorem)
-
-<br/>
-</details>
-
-<details>
-<summary><b>6️⃣ Log-Normal Distribution</b> — The distribution of money</summary>
-
-<br/>
-
-X follows Log-Normal if **ln(X) ~ Normal(μ, σ²)**.
-
-```
-PDF: f(x) = [1/(xσ√2π)] × exp[−(ln x − μ)² / (2σ²)]    for x > 0
-
-Mean  = exp(μ + σ²/2)
-Mode  = exp(μ − σ²)
+Angle:  θ = cos⁻¹( A·B / (||A||₂ × ||B||₂) )
 ```
 
 **Key Properties:**
-- Always positive — ideal for prices, incomes, amounts
-- Right-skewed with a long tail
-- Product of many independent factors → Log-Normal (Multiplicative CLT)
+- **Dot Product > 0** → vectors point in same direction (positive correlation)
+- **Small angle θ** → high similarity between the two score profiles
+- **Norm 2** is the most common measure of vector magnitude
 
-> 📌 *In this project:* `transaction_amount` is best described by Log-Normal — confirmed by Q-Q plot and KS test.
-
-<br/>
-</details>
-
-<details>
-<summary><b>7️⃣ Power Law Distribution</b> — The Pareto principle in data</summary>
-
-<br/>
-
-```
-P(X > x) ∝ x^(−α)       (Survival / CCDF)
-f(x)     ∝ x^(−α−1)     (PDF)
-```
-
-**Detection:** log(P(X > x)) vs log(x) gives a straight line with slope **−α**.
-
-**Famous as:** Pareto 80-20 Rule — top 20% customers generate 80% revenue.
-
-> 📌 *In this project:* Power Law fit reveals **α ≈ 2.5** — small fraction of high-value orders drive most revenue.
-
-<br/>
-</details>
-
-<details>
-<summary><b>8️⃣ Box-Cox Transformation</b> — Making data behave normally</summary>
-
-<br/>
-
-```
-y(λ) = (x^λ − 1) / λ     if λ ≠ 0
-y(λ) = ln(x)              if λ = 0
-```
-
-| λ Value | Transformation Applied |
-|---|---|
-| 1 | No change |
-| 0 | Natural log |
-| 0.5 | Square root |
-| −1 | Reciprocal |
-
-> ⚠️ Data must be strictly **positive (x > 0)** before applying Box-Cox.
-
-> 📌 *In this project:* Optimal **λ ≈ 0.15** — near log-transform. Reduces skewness significantly.
-
-<br/>
-</details>
-
-<details>
-<summary><b>9️⃣ Poisson Distribution</b> — Counting independent events over time</summary>
-
-<br/>
-
-Models number of events in a fixed interval when events occur independently at constant rate λ.
-
-```
-P(X = k) = (e^(−λ) × λ^k) / k!
-
-Mean = Variance = λ        ← unique property of Poisson!
-```
-
-**Example:** Hospital receives λ = 4 calls/hour.
-P(exactly 7 calls) = (e⁻⁴ × 4⁷) / 7! ≈ 0.0595
-
-> 📌 *In this project:* Daily transaction count follows **Poisson(λ ≈ 7.1)** — transactions arrive independently throughout January.
-
-<br/>
-</details>
-
-<details>
-<summary><b>🔟 Z-Score Probability</b> — Standardising for comparison</summary>
-
-<br/>
-
-```
-Z = (X − μ) / σ
-
-Z = 0   → value equals the mean
-Z = 1   → 1 std dev above mean
-|Z| > 3 → outlier (less than 0.3% of normal data)
-```
-
-**Empirical Rule:**
-```
-P(|Z| < 1) ≈ 68.3%
-P(|Z| < 2) ≈ 95.4%
-P(|Z| < 3) ≈ 99.7%
-```
-
-**For threshold probability:**
-`P(X > threshold) = 1 − Φ(z)` where Φ is the standard normal CDF
-
-> 📌 *In this project:* Used to compute **P(amount > ₹5000)** and flag outlier transactions.
-
-<br/>
-</details>
-
-<details>
-<summary><b>1️⃣1️⃣ PDF vs CDF</b> — Two sides of the same distribution</summary>
-
-<br/>
-
-| Feature | PDF | CDF |
-|---|---|---|
-| Full Name | Probability Density Function | Cumulative Distribution Function |
-| Answers | "How dense is probability near x?" | "What is P(X ≤ x)?" |
-| Range of output | 0 to +∞ | 0 to 1 |
-| Shape | Varies (bell, skewed...) | Always S-shaped, monotone increasing |
-| P(a < X < b) | Area under curve from a to b | F(b) − F(a) |
-
-```
-CDF(x) = ∫ PDF(t) dt        PDF(x) = d/dx CDF(x)
-```
-
-> 📌 *In this project:*
-> **PDF** → Most amounts cluster between ₹1,000–₹4,000
-> **CDF** → "What % of transactions fall below ₹3,000?" → Read F(3000)
+> 📌 *In this project:* A small angle between Math and Science vectors confirms that students who perform well in one subject tend to perform well in the other.
 
 <br/>
 </details>
@@ -357,17 +259,18 @@ CDF(x) = ∫ PDF(t) dt        PDF(x) = d/dx CDF(x)
 ### 📋 Tasks Completed
 
 - [x] 📂 Dataset loading & exploratory analysis
-- [x] 🏗️ Feature engineering (success flag, daily counts)
-- [x] 🎲 Bernoulli distribution — transaction success probability
-- [x] 🔢 Binomial distribution — weekly transaction count modelling
-- [x] 📅 Poisson distribution — daily transaction rate fitting
-- [x] 📈 Log-Normal distribution — transaction amount fitting
-- [x] 🔗 Power Law distribution — heavy tail analysis
-- [x] 📉 Q-Q Plot — normality testing (raw + log-transformed)
-- [x] 🔄 Box-Cox Transformation — variance stabilisation
-- [x] 🎯 Z-Score analysis — P(amount > ₹5000) + outlier detection
-- [x] 📊 PDF & CDF — full probability curve plots
-- [x] 🏆 Best-fit comparison — KS test across 5 distributions
+- [x] 📊 Mean, Median, Mode — `Math_Score`
+- [x] 📏 Range, Variance, Standard Deviation — `Science_Score`
+- [x] 🎲 P(Pass) — overall pass probability from `Pass_Fail`
+- [x] 📋 Contingency Table — `Pass_Fail` vs `Hours_Studied > 5`
+- [x] 🔗 Conditional Probability — P(Pass | Hours_Studied > 5)
+- [x] 📈 Histogram + Normal Curve — `Math_Score`
+- [x] 〰️ Skewness & Kurtosis — `Science_Score`
+- [x] 📉 Q-Q Plot — `English_Score`
+- [x] 🔢 Score Vectors — first 5 students' Math & Science scores
+- [x] ✖️ Dot Product — Math vector · Science vector
+- [x] 📐 Norm 1 & Norm 2 — Math_Score vector
+- [x] 📌 Angle — between Math & Science score vectors
 
 ---
 
@@ -375,14 +278,15 @@ CDF(x) = ∫ PDF(t) dt        PDF(x) = d/dx CDF(x)
 
 | Analysis | Key Finding | Verdict |
 |---|---|---|
-| 🎲 Bernoulli | p = 0.427 success probability | ✅ 42.7% transactions succeed |
-| 📅 Poisson | λ = 7.1 transactions/day | ✅ Mean = Variance confirmed |
-| 📈 Log-Normal | μ=7.94, σ=0.59 (log scale) | ✅ Best fit for amounts |
-| 🔗 Power Law | α ≈ 2.5 (heavy tail) | ✅ Pareto effect present |
-| 📉 Q-Q Plot | Log amounts → near linear | ✅ Log-Normal confirmed |
-| 🔄 Box-Cox | Optimal λ ≈ 0.15 | ✅ Skewness reduced |
-| 🎯 Z-Score | P(X > ₹5000) ≈ 13.4% | ✅ Matches actual 13.2% |
-| 🏆 Best Fit | Log-Normal wins KS test | ✅ Highest p-value |
+| 📊 Mean / Median / Mode | Central tendency of Math scores | ✅ Distribution shape identified |
+| 📏 Variance & Std Dev | Spread of Science scores | ✅ Score consistency measured |
+| 🎲 P(Pass) | Baseline pass probability computed | ✅ Class pass rate established |
+| 🔗 P(Pass \| Hours > 5) | Significantly higher than P(Pass) | ✅ Study hours strongly predict passing |
+| 📈 Histogram + Curve | Math scores overlaid with normal curve | ✅ Distribution shape visualized |
+| 〰️ Skewness & Kurtosis | Science scores show slight skewness | ✅ Most students score near average |
+| 📉 Q-Q Plot | English scores tested for normality | ✅ Normality assumption verified |
+| ✖️ Dot Product | Positive value between Math & Science | ✅ Positive performance correlation |
+| 📐 Angle θ | Small angle between score vectors | ✅ Math & Science performance aligned |
 
 ---
 
@@ -391,56 +295,55 @@ CDF(x) = ∫ PDF(t) dt        PDF(x) = d/dx CDF(x)
 ### 📋 Prerequisites
 
 ```bash
-pip install pandas numpy scipy statsmodels matplotlib seaborn jupyter
+pip install pandas numpy matplotlib seaborn scipy jupyter
 ```
 
 ### 🛠️ Step-by-Step
 
 **Step 1 — Clone the repository**
 ```bash
-git clone https://github.com/meet6949/spread-locator.git
-cd spread-locator
+git clone https://github.com/meet6949/stats-linear-algebra-exam.git
+cd stats-linear-algebra-exam
 ```
 
 **Step 2 — Place the dataset in the project folder**
 ```
-spread-locator/
-└── spread_locator_dataset.csv    ← put your CSV here
+stats-linear-algebra-exam/
+└── students_scores.csv    ← put your CSV here
 ```
 
 **Step 3 — Launch Jupyter Notebook**
 ```bash
-jupyter notebook Spread_Locator_Analysis.ipynb
+jupyter notebook Final_Practica_Exam.ipynb
 ```
 
 **Step 4 — Run All Cells**
 ```
 Kernel → Restart & Run All
 ```
-> Or press `Shift + Enter` to run cell by cell. All 8 plots save automatically as `.png` files.
+> Or press `Shift + Enter` to run cell by cell.
 
 ---
 
 ## 📁 File Structure
 
 ```
-📦 spread-locator/
+📦 Final_Practical_Exam/
 │
-├── 📓 Spread_Locator_Analysis.ipynb       ← Main Jupyter Notebook (Part B)
-├── 📊 spread_locator_dataset.csv          ← 220 transaction records × 7 features
+├── 📓 Final_Practica_Exam.ipynb     ← Main Jupyter Notebook (Part B)
+├── 📊 students_scores.csv           ← Student score dataset
 │
 ├── 📈 Generated Plots
-│   ├── plot_00_overview.png
-│   ├── plot_01_bernoulli_binomial.png
-│   ├── plot_02_poisson.png
-│   ├── plot_03_lognormal_powerlaw.png
-│   ├── plot_04_qqplot.png
-│   ├── plot_05_boxcox.png
-│   ├── plot_06_zscore.png
-│   ├── plot_07_pdf_cdf.png
-│   └── plot_08_bestfit.png
+│   ├── plot_01_central_tendency.png
+│   ├── plot_02_dispersion.png
+│   ├── plot_03_probability.png
+│   ├── plot_04_histogram_normal.png
+│   ├── plot_05_skewness_kurtosis.png
+│   ├── plot_06_qqplot.png
+│   └── plot_07_vectors_angle.png
 │
-└── 📄 README.md                           ← This file (Theory + Overview)
+├── 📋 README.md                     ← This file (Theory + Overview)
+└── 📋 THEORY_ANSWERS.md             ← Part A short-answer theory
 ```
 
 ---
@@ -448,20 +351,22 @@ Kernel → Restart & Run All
 ## 🧠 Key Concepts Quick Reference
 
 ```
-📌 Statistical Distribution  →  Pattern describing how values are spread
-📌 Q-Q Plot                  →  Visual normality test — points on diagonal = fits
-📌 Discrete Distribution     →  Countable values (PMF) — Bernoulli, Binomial, Poisson
-📌 Continuous Distribution   →  Uncountable values (PDF/CDF) — Normal, Log-Normal
-📌 Bernoulli                 →  Single trial, two outcomes; P(success) = p
-📌 Binomial                  →  n trials; E[X] = np, Var[X] = np(1−p)
-📌 Poisson                   →  Count events over time; E[X] = Var[X] = λ
-📌 Log-Normal                →  ln(X) is normal; ideal for financial amounts
-📌 Power Law                 →  Heavy tail; P(X>x) ∝ x^(−α); Pareto 80-20 rule
-📌 Box-Cox Transform         →  Power family (λ); stabilises variance, reduces skew
-📌 Z-Score                   →  (X−μ)/σ; standardise data; detect outliers
-📌 PDF                       →  Density at a point; area under curve = probability
-📌 CDF                       →  P(X ≤ x); S-shaped; reads cumulative probability
-📌 KS Test                   →  Goodness-of-fit: compares sample vs theoretical CDF
+📌 Mean / Median / Mode     →  Central tendency; mean = Σx/n
+📌 Range                    →  Max − Min; total span of values
+📌 Variance (σ²)            →  Average squared deviation from mean
+📌 Std Deviation (σ)        →  √Variance; same unit as original data
+📌 P(A)                     →  Favourable / Total outcomes
+📌 Conditional Probability  →  P(A|B) = P(A∩B) / P(B)
+📌 Contingency Table        →  Cross-tabulation of two categorical variables
+📌 Normal Distribution      →  Symmetric bell curve; defined by μ and σ
+📌 Skewness                 →  Asymmetry of distribution (+ = right tail)
+📌 Kurtosis                 →  Tail heaviness vs normal distribution
+📌 Q-Q Plot                 →  Normality test — points on diagonal = normal fit
+📌 Vector                   →  Array of scores representing a group of students
+📌 Dot Product              →  Σ(aᵢ × bᵢ); measures directional similarity
+📌 Norm 1 (L1)              →  Sum of absolute values: Σ|aᵢ|
+📌 Norm 2 (L2)              →  Euclidean length: √(Σaᵢ²)
+📌 Angle between vectors    →  cos⁻¹(A·B / ||A||·||B||); low angle = high similarity
 ```
 
 ---
@@ -469,10 +374,10 @@ Kernel → Restart & Run All
 ## 📌 Assumptions
 
 1. Significance level **α = 0.05** used throughout
-2. Log-Normal fit uses MLE parameters from log-transformed data
-3. Power Law α estimated via log-log CCDF linear regression
-4. Box-Cox requires strictly positive values — all amounts are positive ✓
-5. KS test used for distribution comparison (non-parametric, distribution-free)
+2. Pass/Fail threshold defined by the dataset's `Pass_Fail` column directly
+3. Conditional probability computed using raw contingency table counts
+4. Vectors are constructed from the **first 5 students** in the dataset
+5. Normal curve overlay uses sample mean and std dev of `Math_Score`
 
 ---
 
@@ -482,7 +387,7 @@ Kernel → Restart & Run All
 
 **Made with ❤️ by [Meet Gajera](https://github.com/meet6949)**
 
-*Spread Locator — Where Every Distribution Tells a Story*
+*Stats & Linear Algebra Exam — Where Every Formula Tells a Story*
 
 ⭐ *If this project helped you, consider giving it a star!* ⭐
 

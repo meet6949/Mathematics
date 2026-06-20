@@ -2,6 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Student%20Scores&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=A%20Statistics%20Linearg%20Algebra%20on%20Student%20Score&descAlignY=55&descSize=18" width="100%"/>
 
+
 <br/>
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
